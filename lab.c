@@ -4,6 +4,8 @@
 
 #include<math.h>
 int main(){
+
+    // my lab tasks
     srand(time(0));
     int arr[10];
     int sum = 0, a;
