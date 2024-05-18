@@ -1,0 +1,61 @@
+   //---------Roll # BCSF23M511------
+
+   #include <stdio.h>
+//    Global declaration
+
+int mids[]= {29, 25, 35, 18, 15 ,32, 28, 31, 29, 34};
+int sessionals[]={25, 25, 20, 15, 18, 10, 22, 23,19, 22};
+int finals[]={25, 25, 40, 35, 34, 38, 22, 23,25, 27};
+int total[10];
+int std_grades[10];
+int i;
+void total_marks(void);
+void grades(void);
+
+void main(){
+
+
+  printf("********Students Marks Sheet********\n");
+total_marks();
+  grades();
+  for(i = 0; i <10; i++){
+    
+ 
+     printf(" Roll # : %d \n", i+1);
+     printf(" Total marks : %d \n", total[i]);
+     printf(" Grade : %c \n\n", std_grades[i]);
+}
+    printf("\n");
+  printf("\t-------------------------------------------\n");
+       
+}
+  //Function Definition
+void total_marks(void){
+  for(i = 0; i <10; i++){
+   total[i]= mids[i] + sessionals[i] + finals[i];
+
+  }
+  
+}
+
+void grades(void){
+for(i = 0; i <10; i++){
+    if(total[i] <50)
+    std_grades[i] = 'F';
+
+    else if(total[i] <60)
+    std_grades[i] = 'D';
+
+    else if(total[i] <70)
+    std_grades[i] = 'C';
+
+    else if(total[i] <80)
+    std_grades[i] = 'B';
+
+    else
+    std_grades[i] = 'A';
+}
+
+}
+
+

@@ -9,7 +9,7 @@ int main() {
     // scanf("%c", &c);
     //    scanf("%s\n", s);
     //    scanf("%[^\n]s", &sen);
-    // //    it is used to scan input when new line will begin
+    // //    it is used to scan input when new line will begin%[^\n]s
     //    printf("%c\n", c);
     //    printf("%s", s);
     //    printf("\n%s", sen);
